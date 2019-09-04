@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ARTG3601_1_GilmanThomas_SolarSystem_FA19.ma
-//Last modified: Wed, Aug 28, 2019 02:57:11 PM
+//Last modified: Wed, Aug 28, 2019 03:01:33 PM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "450A0207-4E10-3BFE-5EEA-9794616633C3";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -11.406355272703754 204.50809455924076 296.91582057817538 ;
+	setAttr ".t" -type "double3" -13.276205020419264 238.03321278280586 345.58938535214423 ;
 	setAttr ".r" -type "double3" -34.538352729605151 -2.1999999999996627 -9.9465648292798417e-17 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "80551B57-4399-943E-6E61-26ABA11EC12A";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 360.71133914872883;
+	setAttr ".coi" 419.84293643637858;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
