@@ -1,6 +1,6 @@
 //Maya ASCII 2019 scene
 //Name: ARTG3601_1_GilmanThomas_Crate_FA19.ma
-//Last modified: Mon, Sep 23, 2019 02:59:55 PM
+//Last modified: Mon, Sep 23, 2019 03:04:45 PM
 //Codeset: 1252
 requires maya "2019";
 requires "mtoa" "3.1.2";
@@ -14,13 +14,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "78CCFDF3-4052-B687-B7D3-8BAE19567853";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.2067617486715816 10.724706636388053 2.2069641326452483 ;
-	setAttr ".r" -type "double3" -59.138352703881552 1815.7999999999472 0 ;
+	setAttr ".t" -type "double3" 4.0593748014635578 9.1796878878538077 -4.3174121350791328 ;
+	setAttr ".r" -type "double3" -44.138352704014707 2265.4000000001679 2.5444437451708134e-14 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "C7B28EE5-4880-B014-6E85-98829BF01484";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 9.5362622773981247;
+	setAttr ".coi" 9.5362622773982793;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -95,12 +95,13 @@ createNode mesh -n "CrateShape" -p "Crate";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.78260161435165077 0.50453484058380127 ;
+	setAttr ".pv" -type "double2" 0.16790509223937988 0.83302891254425049 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
+	setAttr ".bw" 3;
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "5D1DF89F-4A1F-5F99-114C-DABB411BD273";
